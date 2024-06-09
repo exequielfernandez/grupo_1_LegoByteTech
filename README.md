@@ -25,4 +25,4 @@ Nuestra tienda está dirigida a entusiastas de la tecnología, gamers, profesion
 
 ## Marcos Montilla
 
-**Descripción:** Marcos es un diseñador creativo con un enfoque en la experiencia del usuario y la interfaz de usuario. Tiene una sólida comprensión de los principios de diseño y está comprometido a crear productos hermosos y funcionales.
+**Descripción:** Marcos es un técnico en electrónica con un enfoque en el armado de PC gamers. Posee un sólido entendimiento de los componentes de hardware y está comprometido a ensamblar equipos de alto rendimiento y calidad.
