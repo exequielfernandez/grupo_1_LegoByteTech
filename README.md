@@ -2,7 +2,7 @@
 
 Bienvenido a nuestra tienda virtual de hardware de PC. Aquí encontrarás una amplia variedad de productos para construir, mejorar o personalizar tu PC según tus necesidades y presupuesto.
 -----------------------------------------------------------------------------------------------------
-Nuestra tienda está dirigida a entusiastas de la tecnología, gamers, profesionales de la edición de video, diseñadores gráficos y cualquier persona que esté interesada en construir o mejorar su PC.
+Nuestra tienda está dirigida a entusiastas de la tecnología, gamers, profesionales de la edición de video, diseñadores gráficos y cualquier persona que esté interesada en construir o mejorar su PC. También atendemos a profesionales de TI y empresas que necesitan soluciones personalizadas y soporte técnico experto para el armado y configuración de computadoras y periféricos. Nuestros clientes valoran la comodidad de las compras en línea, la asesoría personalizada y el soporte técnico virtual para garantizar que sus sistemas funcionen perfectamente.
 -----------------------------------------------------------------------------------------------------
 ## Oferta de Productos
 
@@ -30,6 +30,10 @@ Nuestra tienda está dirigida a entusiastas de la tecnología, gamers, profesion
 ## González Gustavo
 
 **Descripción:** Gustavo es un entusiasta del hardware en general con experiencia en el armado de computadoras de todas las gamas. Pondrá a disposición sus conocimientos sobre el tema para ayudar al cliente a elegir el mejor equipo de acuerdo a sus necesidades.
+
+## Lescano Gerardo Gabriel
+
+**Descripción:** Soy Gerardo Gabriel Lescano, un apasionado del desarrollo de software y la tecnología. Disfruto enfrentar desafíos complejos, aprender continuamente y colaborar en proyectos innovadores que mejoren vidas y transformen el mundo.
 
 -----------------------------------------------------------------------------------------------------
 
