@@ -47,3 +47,7 @@ Los sitios se eligieron por las funcionalidades que poseen, por la navegación c
 - https://www.venex.com.ar
 - https://www.logg.com.ar
 
+-----------------------------------------------------------------------------------------------------
+
+# Link tablero de Trabajo (Trello):
+https://trello.com/invite/b/g9EGz3Cd/ATTI53bc408dc86557d708a1e971ea2837e768C6ECD4/proyecto-market-place-grupo1legobytetech
