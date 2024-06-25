@@ -1,0 +1,19 @@
+{
+  "name": "grupo_1_legobytetech",
+  "version": "1.0.0",
+  "description": "Bienvenido a nuestra tienda virtual de hardware de PC. Aquí encontrarás una amplia variedad de productos para construir, mejorar o personalizar tu PC según tus necesidades y presupuesto.\r -----------------------------------------------------------------------------------------------------\r Nuestra tienda está dirigida a entusiastas de la tecnología, gamers, profesionales de la edición de video, diseñadores gráficos y cualquier persona que esté interesada en construir o mejorar su PC.\r -----------------------------------------------------------------------------------------------------\r ## Oferta de Productos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

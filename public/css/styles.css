@@ -1,0 +1,202 @@
+:root {
+  --azul: #041122;
+  --verde: #259073;
+  --verde-claro: #7fda89;
+  --verde-oliva: #c8e98e;
+  --amarillo: #e6f99d;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: var(--azul);
+  color: beige;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .account {
+  display: flex;
+  align-items: center;
+}
+
+header .account button {
+  margin-right: 10px;
+}
+
+header .search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+header .search-bar input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+header .search-bar i {
+  margin-left: 10px;
+  color: beige;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: var(--verde);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para el carrito de compras */
+main {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cart-item img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  background-color: var(--verde-claro);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 50px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.cart-summary {
+  text-align: right;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cart-summary p {
+  margin: 5px 0;
+}
+
+.cart-summary span {
+  font-weight: bold;
+}
+
+.cart-summary button {
+  background-color: var(--verde);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Estilos para los logos de las marcas */
+.logos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  width: 50px;
+  margin: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: var(--verde-claro);
+  padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
