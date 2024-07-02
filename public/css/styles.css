@@ -17,16 +17,14 @@ body {
   color: #333;
 }
 
-/* Estilos para el encabezado */
-header {
+ /* Estilos para el encabezado */
+ header {
+  display:flex;
+  justify-content: space-between;
   background-color: var(--azul);
   color: beige;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
+  padding: 10px 20px;
   align-items: center;
-  position: relative; /* Asegura que el header tenga una posición relativa */
-  z-index: 1; /* Ajusta el z-index según sea necesario */
 }
 
 header .logo {
@@ -37,7 +35,7 @@ header .logo {
 }
 
 header .logo img {
-  height: 50px;
+  max-height: 100px;
 }
 
 header .account {
@@ -48,16 +46,15 @@ header .account {
 header .account button {
   margin-right: 10px;
   background-color: var(--verde); 
-  color: beige; /* Asegúrate de que el color del texto coincida con el esperado */
+  color: beige; 
   padding: 12px 20px; 
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px; 
   border: 2px solid var(--verde); 
   font-size: 16px; 
   font-weight: bold; 
   cursor: pointer; 
   transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
   text-decoration: none; /* Elimina el subrayado del enlace */
-  display: inline-block; /* Asegura que el botón se comporte como bloque en línea */
   appearance: none; /* Asegura que el botón no herede estilos de enlace */
   outline: none; /* Elimina el contorno predeterminado al enfocar el botón */
 }
@@ -75,8 +72,8 @@ header .account button:active {
 
  /* Estilos para el formulario de búsqueda */
  form {
-  display: inline-block;
-  position: relative; /* Para posicionar correctamente el botón */
+  display: flex;
+  position: relative; 
 }
 
 input[type="text"] {
@@ -96,12 +93,15 @@ button[type="submit"] {
   right: 0; /* Posiciona el botón a la derecha del contenedor */
   top: 0; /* Alinea verticalmente con el campo de entrada */
   height: 100%; /* Ajusta la altura al campo de entrada */
-  padding: 0 10px; /* Ajusta el padding para el ícono */
+  padding: 5px 10px; /* Ajusta el padding para el ícono */
 }
 
 @media screen and (max-width: 650px) {
   input[type="text"] {
     width: calc(100% - 10px); /* Ajustamos el ancho para pantallas más pequeñas */
+  }
+  header .logo img{
+    max-height: 60px;
   }
 }
 
@@ -113,8 +113,6 @@ nav {
   padding: 15px 10px; /* Aumenta el padding vertical */
   width: 100%;
   text-align: center;
-  position: relative; /* Asegura que el nav tenga una posición relativa */
-  z-index: 2; /* Asegura que el nav tenga un z-index mayor que el header */
 }
 
 nav ul {
@@ -132,6 +130,47 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+}
+ /* Botón para mostrar/ocultar el menú en pantallas pequeñas */
+.menu-toggle {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #259073;
+  color: white;
+  cursor: pointer;
+  font-size: 20px; 
+  width: 40px; 
+  height: 30px; 
+  line-height: 30px; 
+  border-radius: 10%;
+  border: 2px solid white;
+  position: absolute; 
+  left: 50%;
+  transform: translateY(-50%);
+} 
+@media screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+  }
+
+  nav ul li {
+      margin: 10px 0; 
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  /* Ocultar la lista de enlaces en pantallas pequeñas */
+  nav ul {
+      display: none;
+  }
+
+  /* Mostrar la lista de enlaces cuando el menú está activo */
+  nav ul.active {
+      display: flex;
+      flex-direction: column;
+  }
 }
 /* Estilos para el carrito de compras */
 main {

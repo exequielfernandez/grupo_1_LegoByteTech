@@ -13,23 +13,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
       <script src="https://kit.fontawesome.com/d683ca57df.js" crossorigin="anonymous"></script>
-      <script src="/Pruebas/public/scripts/script.js"></script>
+      <script src="/scripts/script.js"></script>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="logo.png" alt="Logo Legobytetech" />
+        <img src="/images/logo.png" alt="Logo Legobytetech" />
+        <!-- Barra de Búsqueda -->
+        <form action="/buscar" method="GET">
+          <input type="text" id="busqueda" name="b" placeholder="Buscar...">
+          <button type="submit"><i class="fas fa-search"></i>
+          </button>
+        </form>
         <div class="account">
           <button><i class="fa-solid fa-user"></i><a href=""> Mi Cuenta</a></button>
-          <i class="fas fa-shopping-cart"></i>
+          <a href="/cart" class="cart-link">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
         </div>
       </div>
-      <!-- Barra de Búsqueda -->
-      <form action="/buscar" method="GET">
-        <input type="text" id="busqueda" name="b" placeholder="Buscar...">
-        <button type="submit"><i class="fas fa-search"></i>
-        </button>
-      </form>
+      
     </header>
       <!-- Barra de navegación -->
       <nav>
@@ -39,6 +42,7 @@
           <li><a href="#ayuda">Ayuda</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <button class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
       </nav>
     <!-- Slider -->
      <section class="slider-1">
