@@ -1,16 +1,32 @@
 const express = require("express");
-const path = require("path");
+const path = require('path');
 const app = express();
-const port = 3000;
 
-// Servir archivos estáticos
-app.use(express.static("public"));
+const PORT = process.env.PORT || 3000;
 
-// Rutas
-app.get("/", (req, res) => {
-  res.sendFile(path.resolve("./views/cart.html"));
+// Middleware para servir archivos estáticos desde la carpeta 'public'
+app.use(express.static('public'));
+
+// Escuchar en el puerto definido
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
 
-app.listen(port, () => {
-  console.log(`Servidor escuchando en http://localhost:${port}`);
+// Ruta Home
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "home.html"), (err) => {
+        if (err) {
+            console.error(`Error al enviar el archivo home.html: ${err}`);
+            res.status(err.status || 500).send('Error interno del servidor');
+        }
+    });
+});
+// Ruta Carrito
+app.get("/cart", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "cart.html"), (err) => {
+        if (err) {
+            console.error(`Error al enviar el archivo cart.html: ${err}`);
+            res.status(err.status || 500).send('Error interno del servidor');
+        }
+    });
 });

@@ -9,6 +9,8 @@
 /* Estilos para el cuerpo de la página */
 body {
   font-family: Arial, sans-serif;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
@@ -23,6 +25,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative; /* Asegura que el header tenga una posición relativa */
+  z-index: 1; /* Ajusta el z-index según sea necesario */
 }
 
 header .logo {
@@ -43,34 +47,74 @@ header .account {
 
 header .account button {
   margin-right: 10px;
+  background-color: var(--verde); 
+  color: beige; /* Asegúrate de que el color del texto coincida con el esperado */
+  padding: 12px 20px; 
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid var(--verde); 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  display: inline-block; /* Asegura que el botón se comporte como bloque en línea */
+  appearance: none; /* Asegura que el botón no herede estilos de enlace */
+  outline: none; /* Elimina el contorno predeterminado al enfocar el botón */
 }
 
-header .search-bar {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  width: 100%;
+header .account button:hover {
+  background-color: var(--amarillo); /* Cambio de color de fondo al pasar el cursor */
+  color: white; /* Cambio de color de texto al pasar el cursor */
+  border-color: #333; /* Cambio de color de borde al pasar el cursor */
 }
 
-header .search-bar input {
-  padding: 5px;
+header .account button:active {
+  background-color: var(--amarillo); /* Cambio de color de fondo cuando el botón está activo */
+  color: white; /* Cambio de color de texto cuando el botón está activo */
+}
+
+ /* Estilos para el formulario de búsqueda */
+ form {
+  display: inline-block;
+  position: relative; /* Para posicionar correctamente el botón */
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+  width: 700px; 
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
   border: none;
-  border-radius: 5px;
-  flex-grow: 1;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0; /* Posiciona el botón a la derecha del contenedor */
+  top: 0; /* Alinea verticalmente con el campo de entrada */
+  height: 100%; /* Ajusta la altura al campo de entrada */
+  padding: 0 10px; /* Ajusta el padding para el ícono */
 }
 
-header .search-bar i {
-  margin-left: 10px;
-  color: beige;
+@media screen and (max-width: 650px) {
+  input[type="text"] {
+    width: calc(100% - 10px); /* Ajustamos el ancho para pantallas más pequeñas */
+  }
 }
+
 
 /* Estilos para la barra de navegación */
 nav {
   background-color: var(--verde);
   color: white;
-  padding: 10px;
+  padding: 15px 10px; /* Aumenta el padding vertical */
   width: 100%;
   text-align: center;
+  position: relative; /* Asegura que el nav tenga una posición relativa */
+  z-index: 2; /* Asegura que el nav tenga un z-index mayor que el header */
 }
 
 nav ul {
@@ -89,93 +133,190 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-
 /* Estilos para el carrito de compras */
 main {
-  padding: 20px;
+padding: 20px;
 }
 
 h2 {
-  text-align: center;
+text-align: center;
 }
 
 .cart-item {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+display: flex;
+align-items: center;
+background-color: #fff;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
 }
 
 .cart-item img {
-  width: 100px;
-  margin-right: 10px;
+width: 100px;
+margin-right: 10px;
 }
 
 .item-details {
-  flex-grow: 1;
+flex-grow: 1;
 }
 
 .quantity-control {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .quantity-btn {
-  background-color: var(--verde-claro);
-  border: none;
-  padding: 5px;
-  cursor: pointer;
+background-color: var(--verde-claro);
+border: none;
+padding: 5px;
+cursor: pointer;
 }
 
 .quantity-control input {
-  width: 50px;
-  text-align: center;
-  margin: 0 5px;
+width: 50px;
+text-align: center;
+margin: 0 5px;
 }
 
 .price {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .cart-summary {
-  text-align: right;
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+text-align: right;
+background-color: #fff;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
 }
 
 .cart-summary p {
-  margin: 5px 0;
+margin: 5px 0;
 }
 
 .cart-summary span {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .cart-summary button {
-  background-color: var(--verde);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
+background-color: var(--verde);
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+}
+/* Estilos para el slider */
+.slider-1 {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
 }
 
-/* Estilos para los logos de las marcas */
-.logos {
-  margin-top: 20px;
+.product-category {
+  padding: 0 10vw;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  text-align: left;
+  font-family: 'Aptos', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.category-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.category-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.category-thumb {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.category-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.category-name {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: -20px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 9;
 }
 
-.logos img {
-  width: 50px;
-  margin: 10px;
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Estilos para el pie de página */
