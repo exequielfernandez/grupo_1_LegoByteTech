@@ -30,3 +30,13 @@ app.get("/cart", (req, res) => {
         }
     });
 });
+// Ruta productDetail
+app.get("/productDetail", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "productDetail.html"), (err) => {
+        if (err) {
+            console.error(`Error al enviar el archivo productDetail.html: ${err}`);
+            res.status(err.status || 500).send('Error interno del servidor');
+        }
+    });
+});
+
