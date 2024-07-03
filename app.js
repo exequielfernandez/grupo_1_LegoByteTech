@@ -30,3 +30,21 @@ app.get("/cart", (req, res) => {
         }
     });
 });
+// Ruta login
+app.get("/login", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "login.html"), (err) => {
+        if (err) {
+            console.error(`Error al enviar el archivo login.html: ${err}`);
+            res.status(err.status || 500).send('Error interno del servidor');
+        }
+    });
+});
+// Ruta signUp
+app.get("/signUp", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "signUp.html"), (err) => {
+        if (err) {
+            console.error(`Error al enviar el archivo signUp.html: ${err}`);
+            res.status(err.status || 500).send('Error interno del servidor');
+        }
+    });
+});
