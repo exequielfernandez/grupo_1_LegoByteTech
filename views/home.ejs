@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegoByteTech</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aptos&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/d683ca57df.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/images/logo.png" alt="Logo Legobytetech" />
+      </div>
+      <!-- Barra de Búsqueda -->
+      <form action="/buscar" method="GET">
+        <input
+          type="text"
+          id="busqueda"
+          name="busqueda"
+          placeholder="Buscar..."
+        />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="account">
+        <button>
+          <i class="fa-solid fa-user"></i><a href=""> Mi Cuenta</a>
+        </button>
+        <a href="/cart" class="cart-link">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
+    </header>
+    <!-- Barra de navegación -->
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#armador">Armador</a></li>
+        <li><a href="#ayuda">Ayuda</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <!-- Slider -->
+    <section class="slider-1">
+      <h2 class="product-category">Categorías</h2>
+      <button class="pre-btn"><img src="/images/arrow.png" alt="" /></button>
+      <button class="nxt-btn"><img src="/images/arrow.png" alt="" /></button>
+      <div class="product-container">
+        <div class="category-card">
+          <div class="category-image">
+            <img
+              src="/images/slider-1.png"
+              alt="notebooks"
+              class="category-thumb"
+            />
+          </div>
+          <div class="category-info">
+            <h2 class="category-name">Notebooks</h2>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-image">
+            <img
+              src="/images/slider-2.png"
+              alt="mouses"
+              class="category-thumb"
+            />
+          </div>
+          <div class="category-info">
+            <h2 class="category-name">Ratones</h2>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-image">
+            <img
+              src="/images/slider-3.png"
+              alt="keyboards"
+              class="category-thumb"
+            />
+          </div>
+          <div class="category-info">
+            <h2 class="category-name">Teclados</h2>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-image">
+            <img src="/images/slider-4.png" alt="pc" class="category-thumb" />
+          </div>
+          <div class="category-info">
+            <h2 class="category-name">Computadoras</h2>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-image">
+            <img
+              src="/images/slider-5.png"
+              alt="monitor"
+              class="category-thumb"
+            />
+          </div>
+          <div class="category-info">
+            <h2 class="category-name">Monitores</h2>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-image">
+            <img
+              src="/images/slider-6.png"
+              alt="processors"
+              class="category-thumb"
+            />
+          </div>
+          <div class="category-info">
+            <h2 class="category-name">Procesadores</h2>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-image">
+            <img
+              src="/images/slider-7.png"
+              alt="sound"
+              class="category-thumb"
+            />
+          </div>
+          <div class="category-info">
+            <h2 class="category-name">Sonido</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <!-- Logos de las marcas -->
+      <div class="logos">
+        <img src="/images/logo1.png" alt="Marca 1" />
+        <img src="/images/logo2.png" alt="Marca 2" />
+        <img src="/images/logo3.png" alt="Marca 3" />
+        <img src="/images/logo4.png" alt="Marca 4" />
+        <img src="/images/logo5.png" alt="Marca 5" />
+        <img src="/images/logo6.png" alt="Marca 6" />
+        <img src="/images/logo7.png" alt="Marca 7" />
+        <img src="/images/logo8.png" alt="Marca 8" />
+        <img src="/images/logo9.png" alt="Marca 9" />
+        <img src="/images/logo10.png" alt="Marca 10" />
+        <img src="/images/logo11.png" alt="Marca 11" />
+        <img src="/images/logo12.png" alt="Marca 12" />
+        <img src="/images/logo13.png" alt="Marca 13" />
+        <img src="/images/logo14.png" alt="Marca 14" />
+        <img src="/images/logo15.png" alt="Marca 15" />
+        <!-- Más logos según sea necesario -->
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#arrepentimiento">Botón de arrepentimiento</a></li>
+        <li><a href="#condiciones">Términos y Condiciones</a></li>
+        <li><a href="#quejas">Libro de Quejas</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
