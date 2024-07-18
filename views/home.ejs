@@ -3,18 +3,6 @@
   <%- include('./partials/head') %>
   <body>
     <%- include('./partials/header') %>
-    <!-- Barra de navegación -->
-    <nav>
-      <ul>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#armador">Armador</a></li>
-        <li><a href="#ayuda">Ayuda</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <button class="menu-toggle" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
     <!-- Slider -->
     <section class="slider-1">
       <h2 class="product-category">Categorías</h2>
@@ -131,12 +119,6 @@
       </div>
     </main>
 
-    <footer>
-      <ul>
-        <li><a href="#arrepentimiento">Botón de arrepentimiento</a></li>
-        <li><a href="#condiciones">Términos y Condiciones</a></li>
-        <li><a href="#quejas">Libro de Quejas</a></li>
-      </ul>
-    </footer>
+    <%- include('./partials/footer') %>
   </body>
 </html>
