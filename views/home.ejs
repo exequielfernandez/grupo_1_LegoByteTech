@@ -1,50 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LegoByteTech</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Aptos&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/css/styles.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://kit.fontawesome.com/d683ca57df.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/scripts/script.js"></script>
-  </head>
+  <%- include('./partials/head') %>
   <body>
-    <header>
-      <div class="logo">
-        <img src="/images/logo.png" alt="Logo Legobytetech" />
-      </div>
-      <!-- Barra de Búsqueda -->
-      <form action="/buscar" method="GET">
-        <input
-          type="text"
-          id="busqueda"
-          name="busqueda"
-          placeholder="Buscar..."
-        />
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
-      <div class="account">
-        <button>
-          <i class="fa-solid fa-user"></i><a href=""> Mi Cuenta</a>
-        </button>
-        <a href="/cart" class="cart-link">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-      </div>
-    </header>
+    <%- include('./partials/header') %>
     <!-- Barra de navegación -->
     <nav>
       <ul>

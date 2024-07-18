@@ -34,5 +34,5 @@ app.get("/productDetail", (req, res) => {
 
 // Ruta signUp
 app.get("/signUp", (req, res) => {
-  res.render("singUp");
+  res.render("signUp");
 });

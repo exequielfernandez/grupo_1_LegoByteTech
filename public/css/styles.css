@@ -6,27 +6,37 @@
   --amarillo: #e6f99d;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Estilos para el cuerpo de la página */
 body {
   font-family: "Aptos", sans-serif;
   align-items: center;
   min-height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
   background-color: #f5f5f5;
   color: #333;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 /* Estilos para el encabezado */
 header {
-  width: 100vw;
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: var(--azul);
   color: beige;
   padding: 10px 20px;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -80,6 +90,8 @@ header .account button:active {
 form {
   display: flex;
   position: relative;
+  width: 45%;
+  max-width: 700px;
 }
 
 input[type="text"] {
@@ -87,8 +99,7 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-right: 5px;
-  max-width: 700px;
-  width: 60%;
+  width: 100%;
   box-sizing: border-box;
 }
 
