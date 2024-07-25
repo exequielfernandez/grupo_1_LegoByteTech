@@ -1,4 +1,25 @@
-# Retrospectiva
+# Retrospectiva 2do Sprint
+Luego del segundo sprint llegamos a las siguientes conclusiones:
+
+## 1- Comenzar a Hacer
+    - Sincronizar los tiempos entre los integrantes del grupo.
+
+## 2- Hacer más
+    - Corroborar el funcionamiento del proyecto antes y después de hacer el commit.
+
+## 3- Continuar Haciendo
+    - Colaborar solucionando los conflictos y errores que se presentan en el código de los demás integrantes.
+
+## 4- Hacer menos
+    - Reuniones con el grupo incompleto.
+    - Posponer reuniones.
+
+## 5- Dejar de hacer
+    - Posponer las tareas acercándolas a la fecha límite.
+
+
+
+# Retrospectiva 1er Sprint
 Luego del primer sprint llegamos a las siguientes conclusiones en cuanto al funcionamiento del grupo:
 
 ## 1- Comenzar a Hacer
