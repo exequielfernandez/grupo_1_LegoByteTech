@@ -36,3 +36,11 @@ app.get("/productDetail", (req, res) => {
 app.get("/signUp", (req, res) => {
   res.render("signUp");
 });
+
+app.get("/create", (req, res) => {
+  res.render("create");
+});
+
+app.get("/products", (req, res) => {
+  res.render("products");
+});

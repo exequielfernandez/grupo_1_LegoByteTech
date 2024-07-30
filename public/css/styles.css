@@ -103,7 +103,7 @@ form {
   box-sizing: border-box;
 }
 
-#btn-search{
+#btn-search {
   border: none;
   background: none;
   cursor: pointer;
@@ -271,7 +271,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   position: relative;
   overflow: hidden;
   padding: 20px;
@@ -435,7 +435,7 @@ footer ul li a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .login-container {
@@ -451,9 +451,9 @@ footer ul li a {
 .login-form {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  width: 100%; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .login-form h2 {
@@ -478,7 +478,7 @@ footer ul li a {
 }
 
 #btn-login {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -534,9 +534,9 @@ footer ul li a {
 .signup-form {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  width: 100%; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .signup-form h2 {
@@ -550,7 +550,7 @@ footer ul li a {
 
 .form-group label {
   font-weight: bold;
-  display: block; 
+  display: block;
 }
 
 .form-group input,
@@ -578,7 +578,7 @@ footer ul li a {
 }
 
 #btn-register {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -659,8 +659,6 @@ footer ul li a {
   background-color: #7fda89;
 }
 
-
-
 .related-products {
   max-width: 90%;
   width: 90%;
@@ -700,29 +698,29 @@ footer ul li a {
 
 @media (min-width: 600px) {
   .product-container {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .product-image {
-      flex: 1;
+    flex: 1;
   }
 
   .product-details {
-      flex: 1;
+    flex: 1;
   }
 
   .product-gallery {
-      flex-direction: row;
-      justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .related-product {
-      flex: 1;
-      margin: 0 10px;
+    flex: 1;
+    margin: 0 10px;
   }
 
   .related-product img {
-      width: 50%;
+    width: 50%;
   }
 }

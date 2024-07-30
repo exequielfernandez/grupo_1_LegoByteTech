@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('./partials/head') %>
+  </head>
+  <body id="loginpage">
+    <%- include('./partials/header') %>
+    <div class="login-container">
+      <form class="login-form">
+        <h3>Agregar un producto</h3>
+        <div class="form-group">
+          <label for="product-name">Nombre del producto</label>
+          <input type="text" id="product-name" name="product-name" required />
+        </div>
+        <div class="form-group">
+          <label for="product-price">Precio</label>
+          <input
+            type="number"
+            id="product-price"
+            name="product-price"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="product-category">Categoria</label>
+          <select name="product-category" id="product-category">
+            <option value="Notebooks">Notebooks</option>
+            <optgroup label="Componentes de PC">
+              <option value="Memorias RAM">Memorias RAM</option>
+              <option value="Procesadores">Procesadores</option>
+            </optgroup>
+            <option value="Monitores">Monitores</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="product-description">Descripción</label>
+          <textarea
+            name="product-description"
+            id="product-description"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="product-image">Imagen del producto</label>
+          <input type="file" id="product-image" name="product-image" required />
+        </div>
+        <button type="submit" id="btn-login">Actualizar producto</button>
+      </form>
+    </div>
+    <%- include('./partials/footer') %>
+  </body>
+</html>
